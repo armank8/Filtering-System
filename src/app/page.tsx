@@ -1,3 +1,4 @@
+import { DropdownMenu, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 
 export default function Home() {
@@ -6,7 +7,11 @@ export default function Home() {
       <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
         <h1 className="text-4xl font-bold tracking text-gray-900">High quality cotton fabrics</h1>
         <div className="flex items-center">
-          options
+          <DropdownMenu>
+            <DropdownMenuTrigger className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
+              sort
+            </DropdownMenuTrigger>
+          </DropdownMenu>
         </div>
       </div>
     </main>
